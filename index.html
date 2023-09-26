@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Dictionary with free API</title>
+  </head>
+  <body>
+    <div class="app">
+      <main class="main">
+        <h1>Your best <span>Dictionary</span></h1>
+        <form action="" class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Type a word..."
+              autocomplete="off"
+              name="word"
+              id="word-input"
+              value=""
+            />
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <div class="error">Word not found</div>
+        <div class="results">
+          <div class="results-info">
+            <div class="results-word"></div>
+            <div class="results-sound">
+              <img src="./assets/images/sound.png" alt="sound" />
+            </div>
+          </div>
+
+          <div class="results-list">
+            <div class="results-item">
+              <div class="results-item_part">Noun</div>
+
+              <div class="results-item__defenitions">
+                <div class="results-item__definition">
+                  <p></p>
+                  <div class="results-item__example"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <a href="https://github.com/Hitjab" target="_blank">© Hitjab 2023</a>
+      </footer>
+    </div>
+
+    <script src="./assets/js/scripts.js"></script>
+  </body>
+</html>
